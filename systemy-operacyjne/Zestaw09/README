@@ -1,0 +1,8 @@
+program wykluczanie.c nie przyjmuje zadnych argumentow
+
+program prezentuje dzialanie watkow z uzyciem muteksow,
+watek ktory jest w sekcji krytycznej wypisuje po prawej stronie czerwonym kolorem 'sekcja krytyczna'
+watki ktore czekaja na wejscie do sekcji krytycznej wypisuja po lewej stronie 'czekam'
+watek ktory wlasnie wyszedl z sekcji krytycznej wypisuje po lewej stronie 'spie'
+
+oczekiwana wartosc licznika to LICZBA WATKOW * LICZBA WEJSC DO SEKCJI KRYTYCZNEJ

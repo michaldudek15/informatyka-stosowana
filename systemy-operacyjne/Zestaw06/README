@@ -1,0 +1,10 @@
+program semuse.x nalezy wywolywac z podaniem jednego z argumentow:
+i - inicjuje semafor i wypisuje o nim informacje
+r - usuwa semafor 
+p - opuszcza semafor i wypisuje o nim informacje
+v - podnosi semafor i wypisuje o nim informacje 
+q - wypisuje informacje o semaforze
+
+
+program powielacz.x nalezy wywolac nastepujaca:
+./powielacz.x ./prog.x <liczba procesow potomnych> <liczba wejsc do sekcji krytycznych>

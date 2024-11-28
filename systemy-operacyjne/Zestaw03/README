@@ -1,0 +1,21 @@
+Program obsluga.c wywoluje sie następujaco:
+./obsluga.x d|i|p sigid
+gdzie d, i, p to akcja która chcemy wykonac dla sygnalu
+d - wykonanie domyslnej operacji
+i - ignorowanie sygnalu
+p - przechwycenie i wypisanie numeru sygnalu
+a sigid to numer sygnalu, ktory chcemy obsluzyc.
+
+Program wysylaj.c uruchamia się tak samo jak obsluga.c. Ten program wywoluje
+poprzedni program i wysyla mu sygnal, ktory ma zostac przez niego obsluzony.
+
+Ostatni program, grupa.c tworzy proces potomny, ktory nastepnie uruchamia trzy 
+programy do obslugi sygnalow. Nastepnie zmienia pgid wszystkich utworzonych procesow
+na pid pierwszego utworzonego. Kolejnie proces macierzysty wysyla sygnal do utworzonej grupy
+procesow.
+
+9 SIGKILL - bezwarunkowe zakonczenie procesu (nieprzechwytywalny)
+19 SIGSTOP - zatrzymanie procesu bez zakonczenia (nieprzechwytywalny)
+20 SIGTSTP - zatrzymanie procesu z klwiatury [ctrl + Z]
+2 SIGINT - przerwanie z klawiatury [ctrl +C]
+3 SIGQUIT - wyjscie z klawiatury [ctrl + \]

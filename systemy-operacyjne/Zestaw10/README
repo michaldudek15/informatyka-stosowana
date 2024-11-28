@@ -1,0 +1,4 @@
+programy zadanie1.c i zadanie2.c nie przyjmuja zadnych argumentow
+
+oba programy wykorzystuja algorytm piekarniany do synchronizacji watkow
+watki w sekcji krytycznej iteruja globalny licznik

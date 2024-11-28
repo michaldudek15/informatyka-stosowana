@@ -1,0 +1,3 @@
+program do kopiowania zawartosci pliku magazyn.txt do pliku schowek.txt przy uzyciu potoku nienazwanego
+uzycie:
+./prodkons.x magazyn.txt schowek.txt

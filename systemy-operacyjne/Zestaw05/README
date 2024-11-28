@@ -1,0 +1,3 @@
+programy sluzace do kopiowania zawartosci pliku magazyn.txt do pliku schowek.txt przy uzyciu potoku nazwanego
+przykladowe uzycie:
+./fifo.x <nazwa potoku> magazyn.txt schowek.txt

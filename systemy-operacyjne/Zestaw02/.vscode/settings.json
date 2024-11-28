@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "procinfo.h": "c",
+        "unistd.h": "c"
+    }
+}

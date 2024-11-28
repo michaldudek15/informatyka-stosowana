@@ -1,0 +1,17 @@
+Ile teraz powstaje procesów w zadaniu 2. i dlaczego?
+W zadaniu 2. powstają teraz 3 procesy, ponieważ fork wykonał się 3 razy i każdy proces potomny jest podmieniany procesem ./potomny.x, więc procesy potomne nie używają już funkcji fork.
+
+Ile procesów powstanie przy n-krotnym wywołaniu funkcji fork-exec jak w zadaniu 2. i dlaczego?
+Przy n-krotnym wywołaniu funkcji fork-exec powstanie n procesów, ponieważ procesy potomne zostaną podmienione innym procesem i nie będą dalej wywoływać funkcji fork w pętli for.
+
+Co robi funkcja execl()? Czym się różni od funkcji execv()?
+Funkcje execl() i execv() podmieniają aktualny proces wskazanym (jako argument) programem. execl() od execv() różnią się postacią argumentów, w execl() argumenty są w postaci listy, a w execv() w postaci tablicy.
+
+Jaką rolę pełni proces init lub systemd?
+Procesy init lub systemd 'adoptują' procesy osierocone.
+
+Co to są procesy zombi?
+Procesy zombi to takie procesy, które się zakończyły, ale na które nie czekają żadne inne procesy.
+
+Co to są procesy osierocone?
+Procesy osierocone to takie procesy, których procesy macierzyste zakończyły się przed nimi.

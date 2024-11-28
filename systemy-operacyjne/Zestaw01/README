@@ -1,0 +1,19 @@
+1. Opisać dokładnie jak działa funkcja fork()?
+Funkcja fork() tworzy proces potomny, który wykonuje program od momentu jego powstania, przejmuje wszystkie wartości zmiennych.
+Zwraca -1 w przypadku błędu, 0 w przypadku procesu potomnego, a w przypadku procesu macierzystego: PID procesu potomnego.
+
+2. Ile powstaje procesów w zadaniu procesy i dlaczego?
+W zadaniu procesy.c powstanie 8 procesów, ponieważ pętla for wykonuje się 3 razy.
+
+3. Ile procesów powstanie przy n-krotnym wywołaniu funkcji fork i dlaczego?
+Przy n-krotnym wywołaniu funkcji fork powstaje 2^n procesów, ponieważ procesy potomne przejmują wartości iteratora pętli swojego procesu macierzystego.
+
+4. Jak używając funkcji sleep i bez odwoływania się do funkcji wait() zapewnić aby procesy macierzyste kończyły się dopiero po procesach potomnych?
+Należy użyć funkcji sleep w momencie, kiedy jesteśmy w procesie macierzystym, aby dać czas na wykonanie się procesu potomnego.
+W przypadku moich programów będzie to default case instrukcji switch.
+
+5. Jaką wartość zwraca open()?
+Funkcja open() zwraca deksryptor pliku, który służy jako identyfikator pliku.
+
+6. Jaką wartość zwraca read() i write()?
+Funkcje read() i write() zwracają ilość bajtów jaką udało im się odczytać/zapisać.
